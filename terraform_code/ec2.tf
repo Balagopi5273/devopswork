@@ -103,7 +103,7 @@ resource "aws_route_table_association" "dppp-rta-public-subnet-02" {
   subnet_id = aws_subnet.dppp-public-subnet-02.id 
   route_table_id = aws_route_table.dppp-public-rt.id   
 }
-
+/*
 module "sgs" {
     source = "../sg_eks"
     vpc_id     =     aws_vpc.dppp-vpc.id
@@ -115,5 +115,6 @@ module "sgs" {
        subnet_ids = [aws_subnet.dppp-public-subnet-01.id,aws_subnet.dppp-public-subnet-02.id]
       sg_ids = module.sgs.security_group_public
   }
+  */
   
 
